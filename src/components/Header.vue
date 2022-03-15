@@ -9,7 +9,9 @@
               <img src="../assets/shopping-bag.svg" alt="cart">
               <span>0</span>
           </div>
-          <img src="../assets/user.svg" alt="login">
+          <div class="login">
+              <img src="../assets/user.svg" alt="login">
+          </div>
       </div>
   </header>
 </template>
@@ -66,5 +68,9 @@ header{
     font-weight: 500;
     color: #fff;
     border-radius: 50%;
+}
+
+.login {
+    cursor: pointer;
 }
 </style>
