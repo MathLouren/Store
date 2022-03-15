@@ -1,0 +1,70 @@
+<template>
+  <header>
+      <div class="logo">
+          <img src="../assets/archive.svg" alt="logo da pagina">
+          <span>STORE</span>
+      </div>
+      <div class="right_content">
+          <div class="bag">
+              <img src="../assets/shopping-bag.svg" alt="cart">
+              <span>0</span>
+          </div>
+          <img src="../assets/user.svg" alt="login">
+      </div>
+  </header>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+header{
+    color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    margin: 0 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 30%;
+}
+
+.right_content{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.bag{
+    position: relative;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.bag span{
+    background: orangered;
+    padding: 1px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50%;
+}
+</style>
