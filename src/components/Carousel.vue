@@ -36,6 +36,9 @@ export default {
                 this.index = 0;
             }
             this.slideDirection = 'slide-right';
+            setTimeout(()=>{
+                this.intervalSlide()
+            })
         },
         prev(){
             this.index--;
@@ -53,6 +56,14 @@ export default {
                 return;
             }
         },
+        intervalSlide(){
+            setTimeout(()=>{
+                this.next()
+            },4000)
+        }
+    },
+    created(){
+        this.intervalSlide()
     }
 }
 </script>
