@@ -19,12 +19,12 @@ export default {
         return {
             slides: [
                 'https://picsum.photos/id/230/800/300',
-                'https://picsum.photos/id/231/600/300',
-                'https://picsum.photos/id/232/600/300',
-                'https://picsum.photos/id/233/600/300',
-                'https://picsum.photos/id/234/600/300',
-                'https://picsum.photos/id/235/600/300',
-                'https://picsum.photos/id/236/600/300',
+                'https://picsum.photos/id/231/800/300',
+                'https://picsum.photos/id/232/800/300',
+                'https://picsum.photos/id/233/800/300',
+                'https://picsum.photos/id/234/800/300',
+                'https://picsum.photos/id/235/800/300',
+                'https://picsum.photos/id/236/800/300',
             ],
         }
     },

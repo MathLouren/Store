@@ -1,9 +1,11 @@
 <template>
     <div class="carousel"  @keydown="checkSlide($event)" tabindex="0">
-        <slot></slot>
         <div>
-            <button @click.prevent="next" class="btn btn-next"><img src="../assets/chevron-left.svg"></button>
-        <button @click.prevent="prev" class="btn btn-prev"><img src="../assets/chevron-right.svg"></button>
+            <slot></slot>
+        </div>
+        <div class="settings">
+            <button @click.prevent="next" class="btn btn-next"><img src="../assets/chevron-right.svg"></button>
+            <button @click.prevent="prev" class="btn btn-prev"><img src="../assets/chevron-left.svg"></button>
         </div>
     </div>
 </template>
@@ -65,6 +67,15 @@ export default {
         height:500px;
         z-index:10;
         margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .settings{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+   
     }
     .btn {
         padding:5px;

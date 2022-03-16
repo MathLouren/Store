@@ -43,11 +43,11 @@ header{
 }
 
 .right_content{
-    width: 100%;
+    width: 30%;
     max-width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -72,5 +72,21 @@ header{
 
 .login {
     cursor: pointer;
+}
+
+@media (max-width: 400px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .right_content{
+        width: 20%;
+    }
+
 }
 </style>
