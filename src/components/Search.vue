@@ -24,15 +24,18 @@ section{
 .input_search{
     display: flex;
     justify-content: center;
+    margin: 0 11px 0 5px;
 }
 .input_search input{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 10px 5px;
+    padding-left: -40px;
     outline: none;
     border: 2px solid rgb(126, 126, 126);
     transition: .4s;
-    }
+    font-size: 1.1rem;
+}
 .input_search img{
     margin-left: -35px;
     cursor: pointer;
