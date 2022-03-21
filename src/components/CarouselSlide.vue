@@ -27,10 +27,10 @@ export default {
 
 <style scoped>
     .slide-left-enter-active {
-        animation: slide-left-in 0.5s ease-in;
+        animation: slide-left-in 0.8s ease-in;
     }
     .slide-left-leave-active {
-        animation: slide-left-out 0.5s ease-in;
+        animation: slide-left-out 0.8s ease-in;
     }
     @keyframes slide-left-in{
         from  { transform: translateX(-100%);}
@@ -42,10 +42,10 @@ export default {
     }
     
     .slide-right-enter-active {
-        animation: slide-right-in 0.5s ease-in;
+        animation: slide-right-in 0.8s ease-in;
     }
     .slide-right-leave-active {
-        animation: slide-right-out 0.5s ease-in;
+        animation: slide-right-out 0.8s ease-in;
     }
     @keyframes slide-right-out{
         from  { transform: translateX(0%);}

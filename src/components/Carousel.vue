@@ -36,9 +36,6 @@ export default {
                 this.index = 0;
             }
             this.slideDirection = 'slide-right';
-            setTimeout(()=>{
-                this.intervalSlide()
-            })
         },
         prev(){
             this.index--;
@@ -56,15 +53,7 @@ export default {
                 return;
             }
         },
-        intervalSlide(){
-            setTimeout(()=>{
-                this.next()
-            },4000)
-        }
     },
-    created(){
-        this.intervalSlide()
-    }
 }
 </script>
 <style scoped>
@@ -108,11 +97,11 @@ export default {
         outline:none;
     }
     .btn-next {
-        top:50%;
+        margin: auto 5px;
         right:0;
     }
     .btn-prev {
-        top:50%;
+        margin: auto 5px;
         left:0;
     }
     .carousel-slider {
