@@ -6,6 +6,9 @@
                 <img :src="slide" :alt="slide">
             </carousel-slide>
         </carousel>
+        <section>
+            <Produtos />
+        </section>
     </section>    
 </template>
 
@@ -13,6 +16,7 @@
 import Search from "@/components/Search.vue"
 import Carousel from '@/components/Carousel.vue';
 import CarouselSlide from '@/components/CarouselSlide';
+import Produtos from "@/components/Produtos.vue"
 
 export default {
     data(){
@@ -31,7 +35,8 @@ export default {
     components : {
         Carousel,
         CarouselSlide,
-        Search
+        Search,
+        Produtos
     }
 }
 </script>

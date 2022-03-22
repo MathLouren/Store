@@ -58,13 +58,12 @@ export default {
 </script>
 <style scoped>
 
-
   .carousel {
         position:relative;
         overflow: hidden;
         width: 100%;
         max-width:750px;
-        height:500px;
+        height:350px;
         z-index:10;
         margin: auto;
         display: flex;
@@ -73,10 +72,10 @@ export default {
 
     .settings{
         position: absolute;
-        height: 50%;
+        height: 30%;
         width: 100%;
-   
     }
+
     .btn {
         padding:5px;
         background-color:rgba(0,0,0,0.7);
