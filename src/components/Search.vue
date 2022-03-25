@@ -32,11 +32,10 @@ section{
     padding: 10px 7px;
     padding-left: -40px;
     outline: none;
-    border: 2px solid rgb(126, 126, 126);
+    border: 1px solid rgb(126, 126, 126);
     transition: .4s;
     font-size: 1.1rem;
-    border-radius: 5px;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 .input_search img{
@@ -45,7 +44,7 @@ section{
     cursor: pointer;
 }
 .input_search input:focus{
-    border: 2px solid rgb(44, 44, 44);
+    border: 1px solid rgb(44, 44, 44);
 }
 
 </style>

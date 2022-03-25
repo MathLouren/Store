@@ -33,7 +33,12 @@ export default{
  }
 
  #app{
-   max-width: 1400px;
    margin: auto;
  }
+
+  main{
+  max-width: 1400px;
+  margin: auto;
+  }
+
 </style>

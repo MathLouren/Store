@@ -1,6 +1,7 @@
 <template>
   <header>
-      <div class="logo">
+      <div class="header">
+          <div class="logo">
           <img src="../assets/archive.svg" alt="logo da pagina">
           <span>STORE</span>
       </div>
@@ -13,6 +14,7 @@
               <img src="../assets/user.svg" alt="login">
           </div>
       </div>
+      </div>
   </header>
 </template>
 
@@ -24,13 +26,19 @@ export default {
 
 <style scoped>
 header{
+    margin: auto;
+    border-bottom: 1px solid rgb(44, 44, 44);
+}
+
+.header{
     color: rgb(44, 44, 44);
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     height: 60px;
-    margin: 0 5px;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .logo{

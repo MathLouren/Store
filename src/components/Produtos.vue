@@ -1,17 +1,19 @@
 <template>
   <section>
       <div class="container">
-          <div class="produtos" v-for="(produto, index) in produtos" :key="index">
-              <h1>{{produto.nome}}</h1>
-              <span>{{produto.preco}}</span>
-              <button>Adicionar ao Carrinho</button>
+          <div class="produtos">
+              <img src="../assets/roupa.webp" alt="">
+              <img src="../assets/roupa2.webp" alt="">
+              <img src="../assets/roupa3.webp" alt="">
+              <img src="../assets/roupa4.webp" alt="">
+              <img src="../assets/roupa5.webp" alt="">
+              <img src="../assets/roupa6.webp" alt="">
           </div>
       </div>
   </section>
 </template>
 
 <script>
-import {api} from "@/services.js"
 
 export default {
     data(){
@@ -20,11 +22,7 @@ export default {
         };
     },
     methods: {
-        getProdutos(){
-            api.get("/produto").then(r =>{
-                this.produtos = r.data;
-            });
-        }
+      
     },
     created(){
         this.getProdutos();
@@ -45,16 +43,12 @@ section{
 }
 
 .produtos{
-    width: 250px;
-    height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid rgb(44, 44, 44);
-    padding: 15px;
-    border-radius: 2px;
-    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.produtos img{
+    margin: 5px;
 }
 
 h1{
