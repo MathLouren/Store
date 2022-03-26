@@ -41,4 +41,15 @@ export default{
   margin: auto;
   }
 
+  button{
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+
 </style>

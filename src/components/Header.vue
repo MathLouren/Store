@@ -28,7 +28,7 @@ export default {
 header{
     margin: auto;
     padding: 0 10px;
-    border-bottom: 1px solid rgb(44, 44, 44);
+    border-bottom: 1px solid orangered;
 }
 
 .header{
