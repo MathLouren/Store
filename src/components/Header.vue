@@ -32,7 +32,7 @@ header{
 }
 
 .header{
-    color: rgb(44, 44, 44);
+    color: orangered;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +85,6 @@ header{
 
 @media (max-width: 400px){
   
-
     .logo{
         width: 50%;
     }

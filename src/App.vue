@@ -44,7 +44,6 @@ export default{
   button{
     background: orangered;
     border: none;
-    border-radius: 5px;
     padding: 10px 20px;
     transition: 0.3s;
   }
