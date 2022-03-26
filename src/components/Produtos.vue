@@ -1,14 +1,22 @@
 <template>
   <section>
       <div class="container">
-          <div class="produtos">
-              <img src="../assets/roupa.webp" alt="">
-              <img src="../assets/roupa2.webp" alt="">
-              <img src="../assets/roupa3.webp" alt="">
-              <img src="../assets/roupa4.webp" alt="">
-              <img src="../assets/roupa5.webp" alt="">
-              <img src="../assets/roupa6.webp" alt="">
+          <div class="produto_container">
+                <div class="produtos">
+                    <img src="../assets/roupa.webp" alt="">
+                </div>
+                <div class="produto_info">
+                    <span>1000</span>
+                </div>
           </div>
+           <div class="produto_container">
+                <div class="produtos">
+                    <img src="../assets/roupa2.webp" alt="">
+                </div>
+                <div class="produto_info">
+                    <span>1000</span>
+                </div>
+            </div>
       </div>
   </section>
 </template>
@@ -44,12 +52,31 @@ section{
 
 .produtos{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .produtos img{
-    margin: 5px;
+    margin: 15px;
+    cursor: pointer;
+    height: 450px;
+    transition: 0.3s;
 }
+
+.produtos img:hover{
+    transform: scale(1.1);
+}
+
+.produto_info{
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+}
+.produto_info span{
+    font-size: 1.2rem;
+}
+
+
 
 h1{
     font-size: 1.8rem;

@@ -63,16 +63,17 @@ export default {
         overflow: hidden;
         width: 100%;
         max-width:750px;
-        height:350px;
+        height:300px;
         z-index:10;
         margin: auto;
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
     }
 
     .settings{
         position: absolute;
-        height: 30%;
+        height: 20%;
         width: 100%;
     }
 

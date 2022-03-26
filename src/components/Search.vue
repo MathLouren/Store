@@ -2,7 +2,7 @@
    <section>
        <section class="search_container">
           <div class="input_search">
-              <input type="text">
+              <input type="text" placeholder="Busque seu produto...">
               <img src="../assets/search.svg" alt="search">
           </div>
       </section>

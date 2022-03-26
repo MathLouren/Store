@@ -27,6 +27,7 @@ export default {
 <style scoped>
 header{
     margin: auto;
+    padding: 0 10px;
     border-bottom: 1px solid rgb(44, 44, 44);
 }
 
@@ -83,17 +84,14 @@ header{
 }
 
 @media (max-width: 400px){
-    header{
-        display: flex;
-        justify-content: space-around;
-    }
+  
 
     .logo{
         width: 50%;
     }
 
     .right_content{
-        width: 20%;
+        width: 50%;
     }
 
 }

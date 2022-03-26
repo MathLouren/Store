@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="main">
         <Search />
         <carousel>
             <carousel-slide v-for="slide in slides" :key="slide" class="carousel-slider">
@@ -43,7 +43,7 @@ export default {
 
 <style>
 
-section{
+.main{
     display: flex;
     flex-direction: column;
 }
