@@ -1,105 +1,46 @@
 <template>
   <section>
       <div class="container">
-          <div class="produto_container">
+          <div class="produto_container" v-for="(produto, index) in produtos" :key="index">
+              <div class="produto_nome">
+                  <h1>{{produto.nome}}</h1>
+              </div>
                 <div class="produtos">
                     <img src="../assets/roupa.webp" alt="">
                 </div>
                 <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
+                    <span>{{produto.preco | numeroPreco}}</span>
                 </div>
                 <div class="add_cart">
-                    <button class="cart">
-                        <p>Adicionar ao Carrinho</p>
-                        <img src="../assets/shopping-cart.svg" alt="">
-                    </button>
-                </div>
-          </div>
-          <div class="produto_container">
-                <div class="produtos">
-                    <img src="../assets/roupa2.webp" alt="">
-                </div>
-                <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
-                </div>
-                <div class="add_cart">
-                    <button class="cart">
-                        <p>Adicionar ao Carrinho</p>
-                        <img src="../assets/shopping-cart.svg" alt="">
-                    </button>
-                </div>
-          </div>
-          <div class="produto_container">
-                <div class="produtos">
-                    <img src="../assets/roupa3.webp" alt="">
-                </div>
-                <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
-                </div>
-                <div class="add_cart">
-                    <button class="cart">
-                        <p>Adicionar ao Carrinho</p>
-                        <img src="../assets/shopping-cart.svg" alt="">
-                    </button>
-                </div>
-          </div>
-          <div class="produto_container">
-                <div class="produtos">
-                    <img src="../assets/roupa4.webp" alt="">
-                </div>
-                <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
-                </div>
-                <div class="add_cart">
-                    <button class="cart">
-                        <p>Adicionar ao Carrinho</p>
-                        <img src="../assets/shopping-cart.svg" alt="">
-                    </button>
-                </div>
-          </div>
-          <div class="produto_container">
-                <div class="produtos">
-                    <img src="../assets/roupa5.webp" alt="">
-                </div>
-                <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
-                </div>
-                <div class="add_cart">
-                    <button class="cart">
-                        <p>Adicionar ao Carrinho</p>
-                        <img src="../assets/shopping-cart.svg" alt="">
-                    </button>
-                </div>
-          </div>
-          <div class="produto_container">
-                <div class="produtos">
-                    <img src="../assets/roupa6.webp" alt="">
-                </div>
-                <div class="produto_info">
-                    <span>{{preco | numeroPreco}}</span>
-                </div>
-                <div class="add_cart">
-                    <button class="cart">
+                    <button class="cart" @click="oi(index)">
                         <p>Adicionar ao Carrinho</p>
                         <img src="../assets/shopping-cart.svg" alt="">
                     </button>
                 </div>
           </div>
       </div>
+      {{$store.state.indexProduto}}
   </section>
 </template>
 
 <script>
+import { api } from "@/services.js"
 
 export default {
     data(){
         return{
             produtos:null,
-            preco: 1000,
         };
     },
     methods: {
-      
+      getProdutos(){
+          api.get("/produto").then( r =>{
+              this.produtos = r.data;
+          })
+      },
+      oi(){
+          console.log(this.$store.state.indexProduto)
+      }
     },
     created(){
         this.getProdutos();
@@ -134,6 +75,14 @@ section{
     flex-wrap: wrap;
 }
 
+.produto_nome h1{
+    margin: 15px 0 5px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-weight: 400;
+}
+
 .produtos img{
     margin: 10px;
     cursor: pointer;
@@ -149,7 +98,6 @@ section{
 .produto_info span{
     font-size: 1.1rem;
     color: rgb(44, 44, 44);
-    font-weight: bold;
 }
 
 .add_cart{

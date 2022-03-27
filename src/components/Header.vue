@@ -28,11 +28,11 @@ export default {
 header{
     margin: auto;
     padding: 0 10px;
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid rgb(44, 44, 44);
 }
 
 .header{
-    color: orangered;
+    color: rgb(44, 44, 44);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ header{
     align-items: center;
     gap: 10px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     width: 30%;
 }
 
