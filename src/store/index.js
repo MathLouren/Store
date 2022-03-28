@@ -8,6 +8,9 @@ export default new Vuex.Store({
     indexProduto: "1"
   },
   mutations: {
+    changeIndex(state, payload){
+      state.indexProduto = payload
+    }
   },
   actions: {
   },

@@ -19,12 +19,13 @@
                 </div>
           </div>
       </div>
-      {{$store.state.indexProduto}}
+      <ProdutoDetalhes />
   </section>
 </template>
 
 <script>
 import { api } from "@/services.js"
+import ProdutoDetalhes from "@/components/ProdutoDetails.vue"
 
 export default {
     data(){
@@ -32,13 +33,17 @@ export default {
             produtos:null,
         };
     },
+    components:{
+        ProdutoDetalhes,
+    },
     methods: {
       getProdutos(){
           api.get("/produto").then( r =>{
               this.produtos = r.data;
           })
       },
-      oi(){
+      oi(index){
+          this.$store.commit("changeIndex",index)
           console.log(this.$store.state.indexProduto)
       }
     },
