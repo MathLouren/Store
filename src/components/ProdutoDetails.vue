@@ -16,6 +16,23 @@
           </div>
           <div class="content_right">
               <h1>Nome do Item</h1>
+              <div class="descricao_item">
+                  <p>SHEIN SXY Corte Fora Simples sexy Vestido</p>
+              </div>
+              <div class="preco_item">
+                  <p>15,99</p>
+              </div>
+              <div class="quantidade_item">
+                  <span><img src="../assets/minus.svg" alt=""></span>
+                  <p>1</p>
+                  <span><img src="../assets/plus.svg" alt=""></span>
+              </div>
+              <div class="tamanhos_itens">
+                  <span>M</span>
+                  <span>G</span>
+                  <span>M</span>
+                  <span>M</span>
+              </div>
           </div>
       </div>
   </section>
@@ -78,8 +95,62 @@ export default {
         background-color: rgba(0, 0, 0, 0.1);
     }
 
+    .content_right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .content_right h1{
         font-size: 1.3rem;
         font-weight: 400;
+        margin: 50px 0 10px 0;
+    }
+
+    .descricao_item p{
+        font-size: 0.9rem;
+    }
+
+    .preco_item p{
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .quantidade_item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quantidade_item span{
+        cursor: pointer;
+        padding: 2px 10px;
+        background-color: #ccc;
+        border-radius: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .quantidade_item p{
+        font-size: 1.2rem;
+    }
+
+    .tamanhos_itens{
+        margin: 20px 0;
+    }
+
+    .tamanhos_itens span{
+        padding: 10px;
+        background-color: rgb(40,40,40);
+        color: #fff;
+        border-radius: 50%;
+        margin: 10px 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .tamanhos_itens span:hover{
+        background-color: rgb(105, 105, 105);
     }
 </style>
