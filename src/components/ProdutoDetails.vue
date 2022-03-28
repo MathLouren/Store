@@ -10,7 +10,12 @@
                 <div class="slide">
                 </div>
             </div>
-            <div class="slide_right"></div>
+            <div class="slide_right">
+                
+            </div>
+          </div>
+          <div class="content_right">
+              <h1>Nome do Item</h1>
           </div>
       </div>
   </section>
@@ -40,6 +45,7 @@ export default {
         height: 500px;
         width: 900px;
         background-color: #fff;
+        display: flex;
     }
 
     .slide{
@@ -70,5 +76,10 @@ export default {
     .slide_right:hover{
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .content_right h1{
+        font-size: 1.3rem;
+        font-weight: 400;
     }
 </style>
