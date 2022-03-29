@@ -174,4 +174,5 @@ export default {
     .fechar{
         background-color: red;
     }
+
 </style>
