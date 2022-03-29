@@ -105,6 +105,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .content_right h1{
@@ -148,8 +149,8 @@ export default {
     }
 
     .tamanhos_itens span{
-        padding: 10px;
-        background-color: rgb(40,40,40);
+        padding: 10px 12px;
+        background-color: rgb(75, 75, 75);
         color: #fff;
         border-radius: 50%;
         margin: 10px 5px;
@@ -157,7 +158,7 @@ export default {
         transition: 0.3s;
     }
     .tamanhos_itens span:hover{
-        background-color: rgb(105, 105, 105);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .add_cart{
