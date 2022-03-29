@@ -46,6 +46,7 @@ export default{
     border: none;
     padding: 10px 20px;
     transition: 0.3s;
+    cursor: pointer;
   }
   button:hover{
     transform: scale(1.1);

@@ -33,6 +33,10 @@
                   <span>M</span>
                   <span>M</span>
               </div>
+              <div class="add_cart">
+                  <button>Adicionar ao Carrinho</button>
+                  <button class="fechar">Fechar produto</button>
+              </div>
           </div>
       </div>
   </section>
@@ -104,13 +108,14 @@ export default {
     }
 
     .content_right h1{
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         font-weight: 400;
         margin: 50px 0 10px 0;
     }
 
     .descricao_item p{
         font-size: 0.9rem;
+        margin: 10px 0;
     }
 
     .preco_item p{
@@ -122,12 +127,13 @@ export default {
         display: flex;
         align-items: center;
         gap: 10px;
+        margin: 10px 0 20px 0;
     }
 
     .quantidade_item span{
         cursor: pointer;
         padding: 2px 10px;
-        background-color: #ccc;
+        background-color: rgb(238, 238, 238);
         border-radius: 20%;
         display: flex;
         align-items: center;
@@ -152,5 +158,20 @@ export default {
     }
     .tamanhos_itens span:hover{
         background-color: rgb(105, 105, 105);
+    }
+
+    .add_cart{
+        display: flex;
+        gap: 15px;
+    }
+
+    .add_cart button{
+        color: #fff;
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+
+    .fechar{
+        background-color: red;
     }
 </style>
