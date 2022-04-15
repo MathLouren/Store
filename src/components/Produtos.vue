@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="container">
+      <div class="container" v-if="ProdutoDetalhesModal">
           <div class="produto_container" v-for="(produto, index) in produtos" :key="index">
               <div class="produto_nome">
                   <h1>{{produto.nome}}</h1>
@@ -19,7 +19,7 @@
                 </div>
           </div>
       </div>
-      <ProdutoDetalhes />
+      <ProdutoDetalhes v-else/>
   </section>
 </template>
 
@@ -31,6 +31,7 @@ export default {
     data(){
         return{
             produtos:null,
+            ProdutoDetalhesModal:true
         };
     },
     components:{
@@ -38,13 +39,10 @@ export default {
     },
     methods: {
       getProdutos(){
-          api.get("/produto").then( r =>{
+          api.get("produtos").then( r =>{
               this.produtos = r.data;
+              console.log(this.produtos)
           })
-      },
-      oi(index){
-          this.$store.commit("changeIndex",index)
-          console.log(this.$store.state.indexProduto)
       }
     },
     created(){
@@ -82,10 +80,10 @@ section{
 
 .produto_nome h1{
     margin: 15px 0 5px 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
     color: rgb(44, 44, 44);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .produtos img{
@@ -101,7 +99,7 @@ section{
     justify-content: center;
 }
 .produto_info span{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: rgb(44, 44, 44);
 }
 

@@ -34,7 +34,7 @@
                   <span>M</span>
               </div>
               <div class="add_cart">
-                  <button>Adicionar ao Carrinho</button>
+                  <button class="add_btn">Adicionar ao Carrinho</button>
                   <button class="fechar">Fechar produto</button>
               </div>
           </div>
@@ -86,6 +86,7 @@ export default {
         align-items: center;
         height: 100%;
         gap: 10px;
+        padding: 10px;
     }
 
     .slide_right{
@@ -149,13 +150,14 @@ export default {
     }
 
     .tamanhos_itens span{
-        padding: 10px 12px;
+        padding: 10px 13px;
         background-color: rgb(75, 75, 75);
         color: #fff;
         border-radius: 50%;
         margin: 10px 5px;
         cursor: pointer;
         transition: 0.3s;
+        font-size: 1.2rem;
     }
     .tamanhos_itens span:hover{
         background-color: rgba(0, 0, 0, 0.6);
@@ -172,8 +174,12 @@ export default {
         font-size: 1.1rem;
     }
 
+    .add_btn{
+        background-color: rgb(40,40,40);
+    }
+
     .fechar{
-        background-color: red;
+        background-color: rgb(255, 21, 21);
     }
 
 </style>
