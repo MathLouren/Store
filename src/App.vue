@@ -1,22 +1,17 @@
 <template>
   <div id="app">
-    <header>
-      <Header />
-    </header>
     <main>
-      <Main />
+      <Home />
     </main>
   </div>
 </template>
 <script>
-import Header from "@/components/Header.vue"
-import Main from "@/components/Main.vue"
+import Home from "@/components/Home.vue"
 
 export default{
   name:"App",
   components: {
-    Header,
-    Main,
+    Home,
   }
 }
 </script>
@@ -36,11 +31,6 @@ export default{
    margin: auto;
  }
 
-  main{
-  max-width: 1400px;
-  margin: auto;
-  }
-
   button{
     background: orangered;
     border: none;
@@ -50,6 +40,24 @@ export default{
   }
   button:hover{
     transform: scale(1.1);
+  }
+
+  .v-enter,
+  .v-leave-to{
+    opacity: 0;
+  }
+
+  .v-enter{
+    transform: translate3d(0, -20px, 0);
+  }
+
+  .v-leave-to{
+    transform: translate3d(0, 20px, 0);
+  }
+
+  .v-enter-active,
+  .v-leave-active{
+    transition: all 0.3s;
   }
 
 </style>

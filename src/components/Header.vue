@@ -1,26 +1,32 @@
 <template>
   <header>
       <div class="header">
-          <div class="logo">
-          <img src="../assets/archive.svg" alt="logo da pagina">
-          <span>STORE</span>
-      </div>
+            <router-link to="/" class="logo">
+                <img src="../assets/archive.svg" alt="logo da pagina">
+                <span>STORE</span>
+            </router-link>
       <div class="right_content">
           <div class="bag">
               <img src="../assets/shopping-bag.svg" alt="cart">
               <span>0</span>
           </div>
-          <div class="login">
-              <img src="../assets/user.svg" alt="login">
-          </div>
+                <router-link class="login" to="/login">
+                    <img src="../assets/user.svg" alt="login">
+                </router-link>
       </div>
       </div>
   </header>
 </template>
 
 <script>
-export default {
 
+export default {
+    name:"Header",
+    data(){
+        return{
+            
+        }
+   }
 }
 </script>
 
@@ -49,6 +55,8 @@ header{
     font-size: 1.2rem;
     font-weight: 500;
     width: 30%;
+    text-decoration: none;
+    color: #000;
 }
 
 .right_content{

@@ -1,5 +1,6 @@
 <template>
   <section class="container_login">
+      <transition mode="out-in">
           <div class="login">
               <h2>Entrar</h2>
               <form>
@@ -9,32 +10,29 @@
                   <input type="text" name="password">
               </form>
           </div>
+      </transition>
   </section>
 </template>
 
 <script>
 export default {
-
+    name:"login"
 }
 </script>
 
 <style scoped>
 
 .container_login{
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 93vh;
 }
 
 .login{
     width: 400px;
     height: 500px;
+    background-color: #fff;
 }
 
 </style>

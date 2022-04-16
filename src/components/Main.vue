@@ -1,24 +1,32 @@
 <template>
-    <section class="main">
-        <Search />
-        <carousel>
-            <carousel-slide v-for="slide in slides" :key="slide" class="carousel-slider">
-                <img :src="slide" :alt="slide">
-            </carousel-slide>
-        </carousel>
-        <section>
-            <Produtos />
-        </section>
-    </section>    
+    <section>
+        <header>
+            <Header />
+        </header>
+        <div class="main">
+            <Search />
+            <carousel>
+                <carousel-slide v-for="slide in slides" :key="slide" class="carousel-slider">
+                    <img :src="slide" :alt="slide">
+                </carousel-slide>
+            </carousel>
+            <section>
+                <Produtos />
+            </section>
+        </div>
+    </section>
+        
 </template>
 
 <script>
+import Header from "@/components/Header.vue"
 import Search from "@/components/Search.vue"
 import Carousel from '@/components/Carousel.vue';
 import CarouselSlide from '@/components/CarouselSlide';
 import Produtos from "@/components/Produtos.vue"
 
 export default {
+    name:"Main",
     data(){
         return {
             slides: [
@@ -33,6 +41,7 @@ export default {
         }
     },
     components : {
+        Header,
         Carousel,
         CarouselSlide,
         Search,

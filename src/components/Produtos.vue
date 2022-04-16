@@ -1,6 +1,7 @@
 <template>
   <section>
-      <div class="container" v-if="ProdutoDetalhesModal">
+      <transition mode="out-in" v-if="ProdutoDetalhesModal">
+          <div class="container">
           <div class="produto_container" v-for="(produto, index) in produtos" :key="index">
               <div class="produto_nome">
                   <h1>{{produto.nome}}</h1>
@@ -19,7 +20,10 @@
                 </div>
           </div>
       </div>
-      <ProdutoDetalhes v-else/>
+      </transition>
+      <transition mode="out-it" v-else>
+        <ProdutoDetalhes/>
+      </transition>
   </section>
 </template>
 
@@ -65,6 +69,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .produto_container{
