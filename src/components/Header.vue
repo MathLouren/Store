@@ -2,8 +2,7 @@
   <header>
       <div class="header">
             <router-link to="/" class="logo">
-                <img src="../assets/archive.svg" alt="logo da pagina">
-                <span>STORE</span>
+                <Logo />
             </router-link>
       <div class="right_content">
           <div class="bag">
@@ -19,6 +18,7 @@
 </template>
 
 <script>
+import Logo from "@/components/Logo.vue"
 
 export default {
     name:"Header",
@@ -26,6 +26,9 @@ export default {
         return{
             
         }
+   },
+   components:{
+       Logo
    }
 }
 </script>

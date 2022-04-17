@@ -60,4 +60,18 @@ export default{
     transition: all 0.3s;
   }
 
+  input{
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px 5px;
+    outline: none;
+    width: 350px;
+    border-radius: 1px;
+    margin: 5px 0;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  input:focus{
+    border-color: rgb(60, 60, 60);
+  }
+
 </style>

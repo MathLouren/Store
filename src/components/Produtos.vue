@@ -95,7 +95,7 @@ section{
 .produtos img{
     margin: 10px;
     cursor: pointer;
-    height: 450px;
+    height: 400px;
     transition: 0.3s;
 }
 
