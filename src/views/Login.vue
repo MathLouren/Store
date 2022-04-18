@@ -10,7 +10,7 @@
                         </form>
                         <p>Esqueceu sua senha?</p>
                         <button class="btn">Entrar</button>
-                            <router-link class="btn" to="/resgiter">
+                            <router-link class="btn" to="/register">
                                 Novo ? Crie sua conta
                             </router-link>
                     </div>

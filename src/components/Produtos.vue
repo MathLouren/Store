@@ -69,7 +69,6 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1400px;
     margin: auto;
 }
 

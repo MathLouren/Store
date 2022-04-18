@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from "../views/Login.vue"
 import Main from "@/components/Main.vue"
+import Register from "../views/Register.vue"
 
 
 
@@ -21,6 +22,11 @@ const router = new VueRouter({
       path: "/login",
       name: "Login",
       component: Login
+    },
+    {
+      path: "/register",
+      name: "Register",
+      component: Register
     }
   ],
   scrollBehavior(){
