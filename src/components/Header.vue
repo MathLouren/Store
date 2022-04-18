@@ -9,9 +9,9 @@
               <img src="../assets/shopping-bag.svg" alt="cart">
               <span>0</span>
           </div>
-                <router-link class="login" to="/login">
+            <router-link class="login" to="/login">
                     <img src="../assets/user.svg" alt="login">
-                </router-link>
+            </router-link>
       </div>
       </div>
   </header>
@@ -36,7 +36,6 @@ export default {
 <style scoped>
 header{
     margin: auto;
-    padding: 0 10px;
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
 }
 
@@ -57,7 +56,7 @@ header{
     gap: 10px;
     font-size: 1.2rem;
     font-weight: 500;
-    width: 30%;
+
     text-decoration: none;
     color: #000;
 }

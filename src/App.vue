@@ -64,7 +64,7 @@ export default{
     border: 1px solid rgb(141, 141, 141);
     padding: 10px 5px;
     outline: none;
-    max-width: 100%;
+    width: 100%;
     width: 350px;
     border-radius: 1px;
     margin: 5px 0;
@@ -73,6 +73,21 @@ export default{
   }
   input:focus{
     border-color: rgb(60, 60, 60);
+  }
+
+  .btn{
+    margin: 10px 0;
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.btn:hover{
+    transform: scale(1.1);
   }
 
 </style>

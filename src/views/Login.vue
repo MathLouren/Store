@@ -1,43 +1,33 @@
 <template>
     <transition mode="out-in">
-    <div>
-        <header>
-            <Logo />
-        </header>
-        <section class="container_login">
-                <div class="login">
-                    <h2>Login</h2>
-                    <form>
-                        <input type="text" name="login" placeholder="Login">
-                        <input type="text" name="password" placeholder="Senha">
-                    </form>
-                    <p>Esqueceu sua senha?</p>
-                    <button>Entrar</button>
-                    <button>Novo ? Crie sua conta</button>
-                </div>
-        </section>
-    </div>
+        <div>
+            <section class="container_login">
+                    <div class="login">
+                        <h2>Login</h2>
+                        <form>
+                            <input type="text" name="login" placeholder="Login">
+                            <input type="text" name="password" placeholder="Senha">
+                        </form>
+                        <p>Esqueceu sua senha?</p>
+                        <button class="btn">Entrar</button>
+                            <router-link class="btn" to="/resgiter">
+                                Novo ? Crie sua conta
+                            </router-link>
+                    </div>
+            </section>
+        </div>
     </transition>
 </template>
 
 <script>
-import Logo from "@/components/Logo.vue"
 export default {
     name:"login",
     components:{
-        Logo
     }
 }
 </script>
 
 <style scoped>
-
-header{
-    max-width: 1400px;
-    margin: auto;
-    height: 60px;
-    padding: 10px 0;
-}
 
 form{
     display: flex;
@@ -68,15 +58,6 @@ h2{
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
     padding: 10px;
     margin: 0 10px;
-}
-
-button{
-    margin: 10px 0;
-    background-color: rgb(60, 60, 60);
-    color: #fff;
-    font-size: 1rem;
-    border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
 }
 
 p{

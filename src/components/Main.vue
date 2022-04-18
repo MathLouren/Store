@@ -1,8 +1,5 @@
 <template>
     <section>
-        <header>
-            <Header />
-        </header>
         <div class="main">
             <Search />
             <carousel>
@@ -19,7 +16,6 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue"
 import Search from "@/components/Search.vue"
 import Carousel from '@/components/Carousel.vue';
 import CarouselSlide from '@/components/CarouselSlide';
@@ -41,7 +37,6 @@ export default {
         }
     },
     components : {
-        Header,
         Carousel,
         CarouselSlide,
         Search,

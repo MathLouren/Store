@@ -15,7 +15,6 @@ export default {
 .logo{
     display: flex;
     align-items: center;
-    padding: 10px 5px;
     text-decoration: none;
     gap: 10px;
 }
