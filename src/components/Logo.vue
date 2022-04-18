@@ -15,9 +15,9 @@ export default {
 .logo{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 0;
+    padding: 10px 5px;
     text-decoration: none;
+    gap: 10px;
 }
 
 span{

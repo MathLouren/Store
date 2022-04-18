@@ -64,6 +64,7 @@ export default{
     border: 1px solid rgb(141, 141, 141);
     padding: 10px 5px;
     outline: none;
+    max-width: 100%;
     width: 350px;
     border-radius: 1px;
     margin: 5px 0;

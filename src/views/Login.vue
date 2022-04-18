@@ -67,6 +67,7 @@ h2{
     width: 400px;
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
     padding: 10px;
+    margin: 0 10px;
 }
 
 button{
