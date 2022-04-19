@@ -10,6 +10,8 @@
                             <input type="text" name="password" placeholder="Senha" v-model="$v.password.$model">
                             <p v-if="$v.password.$error" class="error">Este campo é requerido</p>
                             <p class="esqueceu">Esqueceu sua senha?</p>
+                            <p v-if="$v.password.$error" class="error">Este campo é requerido</p>
+                            <p class="esqueceu">Esqueceu sua senha?</p>
                         </form>
                         <button class="btn">Entrar</button>
                             <router-link class="btn" to="/register">
