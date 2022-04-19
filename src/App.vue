@@ -61,7 +61,7 @@ export default{
   }
 
   input{
-    border: 1px solid rgb(141, 141, 141);
+    border: 1px solid #fff;
     padding: 10px;
     outline: none;
     width: 350px;

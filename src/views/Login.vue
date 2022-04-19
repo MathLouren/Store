@@ -6,9 +6,9 @@
                         <h2>Login</h2>
                         <form>
                             <input type="text" name="login" placeholder="Email" v-model="$v.email.$model">
-                            <p v-if="$v.email.$error" class="error">Este campo é requerido</p>
+                            <p v-if="$v.email.$error" class="error">Campo inválido</p>
                             <input type="text" name="password" placeholder="Senha" v-model="$v.password.$model">
-                            <p v-if="$v.password.$error" class="error">Este campo é requerido</p>
+                            <p v-if="$v.password.$error" class="error">Campo inválido</p>
                             <p class="esqueceu">Esqueceu sua senha?</p>
                         </form>
                         <button class="btn">Entrar</button>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { required } from "vuelidate/lib/validators";
+import { required , email } from "vuelidate/lib/validators";
 
 export default {
     name:"login",
@@ -35,7 +35,7 @@ export default {
     components:{
     },
     validations:{
-        email: { required },
+        email: { required , email },
         password: { required }
     }
 }
@@ -78,13 +78,14 @@ h2{
     width: 100%;
     text-align: start;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .esqueceu:hover{
     text-decoration: underline;
 }
 
 .error{
+    width: 100%;
     text-align: start;
     color: red;
     margin: 5px 0;
