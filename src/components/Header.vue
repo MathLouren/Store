@@ -37,6 +37,7 @@ export default {
 header{
     margin: auto;
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
+    padding: 0 10px;
 }
 
 .header{

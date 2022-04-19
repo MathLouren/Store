@@ -62,14 +62,14 @@ export default{
 
   input{
     border: 1px solid rgb(141, 141, 141);
-    padding: 10px 5px;
+    padding: 10px;
     outline: none;
-    width: 100%;
     width: 350px;
-    border-radius: 1px;
+    max-width: 100%;
     margin: 5px 0;
     font-size: 1rem;
     transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
   }
   input:focus{
     border-color: rgb(60, 60, 60);
@@ -79,8 +79,7 @@ export default{
     margin: 10px 0;
     background-color: rgb(60, 60, 60);
     color: #fff;
-    font-size: 1rem;
-    border-radius: 2px;
+    font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
     text-decoration: none;
     padding: 10px 20px;

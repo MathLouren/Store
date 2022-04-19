@@ -5,10 +5,12 @@
                     <div class="login">
                         <h2>Login</h2>
                         <form>
-                            <input type="text" name="login" placeholder="Login">
-                            <input type="text" name="password" placeholder="Senha">
+                            <input type="text" name="login" placeholder="Email" v-model="$v.email.$model">
+                            <p v-if="$v.email.$error" class="error">Este campo é requerido</p>
+                            <input type="text" name="password" placeholder="Senha" v-model="$v.password.$model">
+                            <p v-if="$v.password.$error" class="error">Este campo é requerido</p>
+                            <p class="esqueceu">Esqueceu sua senha?</p>
                         </form>
-                        <p>Esqueceu sua senha?</p>
                         <button class="btn">Entrar</button>
                             <router-link class="btn" to="/register">
                                 Novo ? Crie sua conta
@@ -20,9 +22,21 @@
 </template>
 
 <script>
+import { required } from "vuelidate/lib/validators";
+
 export default {
     name:"login",
+    data(){
+        return{
+            email:"",
+            password:""
+        }
+    },
     components:{
+    },
+    validations:{
+        email: { required },
+        password: { required }
     }
 }
 </script>
@@ -55,19 +69,29 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 400px;
-    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
+    box-shadow: 0 4px 8px rgba(41, 42, 44, 0.5);
     padding: 10px;
     margin: 0 10px;
 }
 
-p{
-    display: block;
+.esqueceu{
+    width: 100%;
     text-align: start;
     cursor: pointer;
-    margin: 10px 0 5px 0;
+    margin: 20px 0;
 }
-p:hover{
+.esqueceu:hover{
     text-decoration: underline;
+}
+
+.error{
+    text-align: start;
+    color: red;
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+.error:hover{
+    text-decoration: none;
 }
 
 </style>
