@@ -76,12 +76,13 @@ h2{
 
 .esqueceu{
     width: 100%;
-    text-align: start;
+    text-align: center;
     cursor: pointer;
     margin: 10px 0;
 }
 .esqueceu:hover{
     text-decoration: underline;
+    color: rgb(94, 94, 94);
 }
 
 .error{

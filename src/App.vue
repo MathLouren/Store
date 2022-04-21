@@ -82,8 +82,9 @@ export default{
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     transition: 0.3s;
+    border-radius: 3px;
 }
 .btn:hover{
     transform: scale(1.1);

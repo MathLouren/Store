@@ -75,6 +75,7 @@ section{
 .produto_container{
     box-shadow: 0 4px 8px rgba(30, 60, 90, 0.4);
     margin: 10px;
+    padding: 10px;
 }
 
 .produtos{
@@ -84,17 +85,16 @@ section{
 }
 
 .produto_nome h1{
-    margin: 15px 0 5px 0;
-    font-size: 1.4rem;
+    margin: 10px 0 20px 0;
+    font-size: 1.3rem;
     text-align: center;
     color: rgb(44, 44, 44);
     font-weight: 500;
 }
 
 .produtos img{
-    margin: 10px;
     cursor: pointer;
-    height: 400px;
+    height: 350px;
     transition: 0.3s;
 }
 
@@ -106,6 +106,7 @@ section{
 .produto_info span{
     font-size: 1.3rem;
     color: rgb(44, 44, 44);
+    margin-top: 10px;
 }
 
 .add_cart{

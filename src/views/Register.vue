@@ -53,4 +53,8 @@ section{
     margin: 0 10px;
 }
 
+input{
+    margin:7px 0;
+}
+
 </style>
